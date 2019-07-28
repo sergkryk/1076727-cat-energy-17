@@ -1,0 +1,24 @@
+.catalog {
+  @include centerer;
+  padding: 0;
+}
+
+.catalog__title {
+  padding: 0 20px;
+  margin: 30px 0 28px 0;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  text-align: left;
+  color: $base-black;
+
+}
+
+.catalog__list {
+  @include list-reset;
+}
+
+.catalog__item {
+  margin-bottom: 23px;
+}
+

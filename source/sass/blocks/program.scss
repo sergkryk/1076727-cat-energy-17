@@ -1,0 +1,219 @@
+.program {
+  @include centerer;
+  margin-bottom: 32px;
+}
+
+.program__card {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.program__title {
+  position: relative;
+  margin: 0;
+  padding: 19px 0 36px 72px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-align: left;
+  color: #111111;
+  text-transform: uppercase;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    width: 50px;
+    height: 50px;
+    background-color: $base-green;
+    border-radius: 50%;
+  }
+}
+
+.program__description {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  padding-bottom: 20px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #444444;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.program__link {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #111111;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 11px;
+    background-color: transparent;
+    background-image: url(../../img/icon-right-arrow-long.svg);
+    top: 6px;
+    right: -30px;
+  }
+}
+
+.program__title--fit {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 49px;
+    background-image: url(../../img/icon-cat-slim.svg);
+    background-repeat: no-repeat;
+    left: 21px;
+    top: 9px;
+    z-index: 10;
+  }
+}
+.program__title--power {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 67px;
+    height: 28px;
+    background-image: url(../../img/icon-cat-pro.svg);
+    background-repeat: no-repeat;
+    left: -5px;
+    top: 21px;
+    z-index: 10;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program {
+    @include centerer-tablet;
+  }
+
+  .program__card {
+    margin: 0 0 20px 0;
+    padding: 80px 0 60px 55px;
+  }
+
+  .program__title {
+    padding: 0;
+    margin-bottom: 25px;
+    font-size: 36px;
+    line-height: 37px;
+    &::after {
+      left: 385px;
+      top: 20px;
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .program__title--fit {
+    &::before {
+      width: 140px;
+      height: 194px;
+      background-image: url(../../img/icon-cat-slim.svg);
+      left: 420px;
+    }
+  }
+
+  .program__title--power {
+    &::before {
+      width: 268px;
+      height: 112px;
+      background-image: url(../../img/icon-cat-pro.svg);
+      background-repeat: no-repeat;
+      left: 355px;
+      top: 70px;
+      z-index: 10;
+    }
+  }
+
+  .program__description {
+    padding: 0 270px 0 0;
+    margin-bottom: 61px;
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+  }
+
+  .program__link {
+    font-size: 20px;
+    line-height: 20px;
+    &::after {
+      top: 10px;
+      right: -35px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program {
+    @include centerer-desktop;
+    padding: 0 110px;
+    margin-bottom: 55px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .program__card {
+    padding: 75px 0 62px 10px;
+    width: 560px;
+  }
+
+  .program__title {
+    padding-left: 10px;
+    text-align: center;
+    margin-bottom: 75px;
+    &::after {
+      left: 41px;
+      top: -29px;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .program__title--fit {
+    &::before {
+      width: 70px;
+      height: 97px;
+      left: 54px;
+      top: -34px;
+    }
+  }
+
+  .program__title--power {
+    padding-left: 51px;
+    &::before {
+      width: 134px;
+      height: 56px;
+      left: 25px;
+      top: -5px;
+      z-index: 10;
+    }
+  }
+
+  .program__description {
+    margin-bottom: 30px;
+    padding-left: 41px;
+    padding-right: 40px;
+  }
+
+  .program__link {
+    padding-left: 41px;
+    &::after {
+      top: 10px;
+      right: -47px;
+    }
+  }
+}

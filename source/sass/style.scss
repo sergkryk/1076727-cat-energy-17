@@ -1,0 +1,19 @@
+body  {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+}
+@import "variables.scss";
+@import "mixins.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/site-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/site-promo.scss";
+@import "blocks/program.scss";
+@import "blocks/product-description";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/catalog.scss";
+@import "blocks/product-card.scss";
