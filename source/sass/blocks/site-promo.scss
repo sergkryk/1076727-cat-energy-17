@@ -2,7 +2,7 @@
   @include centerer;
   color: white;
   text-align: center;
-  background-image: url(../../img/index-can-mobile@1x.png), url(../../img/index-background-mobile@1x.jpg);
+  background-image: url("../../img/index-can-mobile@1x.png"), url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center 170px, top;
 }
@@ -35,7 +35,7 @@
     padding: 0 120px;
     color: #000000;
     text-align: left;
-    background-image: url(../../img/index-can-tablet@1x.jpg);
+    background-image: url("../../img/index-can-tablet@1x.jpg");
     background-position: -25px 190px;
   }
 
@@ -66,7 +66,7 @@
     @include centerer-desktop;
     padding: 54px 110px 0 191px;
     margin-top: -121px;
-    background-image: url(../../img/index-can-desktop@1x.png), url(../../img/index-background-desktop@1x.jpg);
+    background-image: url("../../img/index-can-desktop@1x.png"), url("../../img/index-background-desktop@1x.jpg");
     background-position: 560px 150px, right top;
   }
 

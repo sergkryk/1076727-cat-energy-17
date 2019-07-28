@@ -19,6 +19,7 @@
   text-align: left;
   color: #111111;
   text-transform: uppercase;
+
   &::after {
     content: "";
     position: absolute;
@@ -62,7 +63,7 @@
     width: 24px;
     height: 11px;
     background-color: transparent;
-    background-image: url(../../img/icon-right-arrow-long.svg);
+    background-image: url("../../img/icon-right-arrow-long.svg");
     top: 6px;
     right: -30px;
   }
@@ -74,7 +75,7 @@
     position: absolute;
     width: 35px;
     height: 49px;
-    background-image: url(../../img/icon-cat-slim.svg);
+    background-image: url("../../img/icon-cat-slim.svg");
     background-repeat: no-repeat;
     left: 21px;
     top: 9px;
@@ -82,12 +83,13 @@
   }
 }
 .program__title--power {
+
   &::before {
     content: "";
     position: absolute;
     width: 67px;
     height: 28px;
-    background-image: url(../../img/icon-cat-pro.svg);
+    background-image: url("../../img/icon-cat-pro.svg");
     background-repeat: no-repeat;
     left: -5px;
     top: 21px;
@@ -110,6 +112,7 @@
     margin-bottom: 25px;
     font-size: 36px;
     line-height: 37px;
+
     &::after {
       left: 385px;
       top: 20px;
@@ -122,7 +125,7 @@
     &::before {
       width: 140px;
       height: 194px;
-      background-image: url(../../img/icon-cat-slim.svg);
+      background-image: url("../../img/icon-cat-slim.svg");
       left: 420px;
     }
   }
@@ -131,7 +134,7 @@
     &::before {
       width: 268px;
       height: 112px;
-      background-image: url(../../img/icon-cat-pro.svg);
+      background-image: url("../../img/icon-cat-pro.svg");
       background-repeat: no-repeat;
       left: 355px;
       top: 70px;
@@ -150,6 +153,7 @@
   .program__link {
     font-size: 20px;
     line-height: 20px;
+
     &::after {
       top: 10px;
       right: -35px;
@@ -175,6 +179,7 @@
     padding-left: 10px;
     text-align: center;
     margin-bottom: 75px;
+
     &::after {
       left: 41px;
       top: -29px;
@@ -194,6 +199,7 @@
 
   .program__title--power {
     padding-left: 51px;
+
     &::before {
       width: 134px;
       height: 56px;
@@ -211,6 +217,7 @@
 
   .program__link {
     padding-left: 41px;
+
     &::after {
       top: 10px;
       right: -47px;

@@ -1,11 +1,11 @@
-.site-header  {
+.site-header {
   padding: 10px 20px;
   width: 280px;
   margin: 0 auto;
   background-color: white;
 }
 
-.site-header__logo  {
+.site-header__logo {
   display: inline-block;
   vertical-align: middle;
 }
@@ -41,6 +41,7 @@
     height: 2px;
     background-color: #000000;
   }
+
   &::before {
     position: absolute;
     top: 7px;
@@ -51,6 +52,7 @@
     background-color: #000000;
   }
 }
+
 .site-header__menu-toggle--opened {
   position: absolute;
   top: 50%;
@@ -69,6 +71,7 @@
     background-color: #000000;
     transform: rotate(45deg);
   }
+
   &::before {
     position: absolute;
     top: 0;

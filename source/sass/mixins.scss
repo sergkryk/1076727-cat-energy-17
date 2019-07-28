@@ -10,11 +10,13 @@
   background-color: transparent;
   cursor: pointer;
 }
+
 @mixin list-reset {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 @mixin centerer {
   width: 320px;
   margin: 0 auto;
