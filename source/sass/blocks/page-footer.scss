@@ -4,7 +4,6 @@
 }
 
 .page-footer__container {
-  @include centerer;
   padding-top: 39px;
 }
 
@@ -35,7 +34,7 @@
 
 @media (min-width: $tablet-width) {
   .page-footer__container {
-    @include centerer-tablet;
+    width: $width-tablet;
     padding: 45px 30px;
     display: flex;
     justify-content: space-between;
@@ -55,7 +54,7 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__container {
-    @include centerer-desktop;
+    width: $width-desktop;
     padding: 45px 110px;
   }
 

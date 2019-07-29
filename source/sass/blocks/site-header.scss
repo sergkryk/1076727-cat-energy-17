@@ -1,7 +1,5 @@
 .site-header {
   padding: 10px 20px;
-  width: 280px;
-  margin: 0 auto;
   background-color: white;
 }
 
@@ -12,7 +10,7 @@
 
 .site-header__img--tablet,
 .site-header__img--desktop {
-  @include display-none;
+  display: none;
 }
 
 .site-header__menu-link {
@@ -86,7 +84,8 @@
 
 @media (min-width: $tablet-width) {
   .site-header {
-    @include centerer-tablet;
+    width: $width-tablet;
+    padding: 0 30px;
     margin-bottom: 60px;
     display: flex;
     justify-content: space-between;
@@ -95,7 +94,7 @@
 
   .site-header__img--mobile,
   .site-header__img--desktop {
-    @include display-none;
+    display: none;
   }
 
   .site-header__img--tablet {
@@ -103,20 +102,20 @@
   }
 
   .site-header__menu-link {
-    @include display-none;
+    display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-header {
-    @include centerer-desktop;
+    width: $width-desktop;
     padding: 54px 110px 0 110px;
     background-color: transparent;
   }
 
   .site-header__img--mobile,
   .site-header__img--tablet {
-    @include display-none;
+    display: none;
   }
 
   .site-header__img--desktop {

@@ -1,5 +1,4 @@
 .program {
-  @include centerer;
   margin-bottom: 32px;
 }
 
@@ -99,7 +98,8 @@
 
 @media (min-width: $tablet-width) {
   .program {
-    @include centerer-tablet;
+    width: $width-tablet;
+    padding: 0 30px;
   }
 
   .program__card {
@@ -163,7 +163,7 @@
 
 @media (min-width: $desktop-width) {
   .program {
-    @include centerer-desktop;
+    width: $width-desktop;
     padding: 0 110px;
     margin-bottom: 55px;
     display: flex;

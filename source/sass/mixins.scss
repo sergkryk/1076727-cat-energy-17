@@ -1,52 +1,5 @@
-@mixin display-none {
-  display: none;
-}
-
-@mixin button-reset {
-  padding: 0;
-  border: none;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
-  cursor: pointer;
-}
-
 @mixin list-reset {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-@mixin centerer {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
-@mixin centerer-tablet {
-  width: 768px;
-  margin: 0 auto;
-  padding: 0 30px;
-  box-sizing: border-box;
-}
-
-@mixin centerer-desktop {
-  width: 1440px;
-  margin: 0 auto;
-  padding: 0 30px;
-  box-sizing: border-box;
-}
-
-@mixin green-button {
-  display: block;
-  box-sizing: border-box;
-  padding: 16px 27px 16px 25px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.29;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none;
-  background-color: $base-green;
 }

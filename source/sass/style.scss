@@ -1,13 +1,8 @@
-body {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
-}
 
+@import "font.scss";
 @import "variables.scss";
+@import "scafolding.scss";
 @import "mixins.scss";
-@import "blocks/visually-hidden.scss";
 @import "blocks/site-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";

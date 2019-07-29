@@ -1,7 +1,3 @@
-.product-description {
-  @include centerer;
-}
-
 .product-description__title {
   margin: 0 0 35px 0;
   padding: 0;
@@ -62,7 +58,8 @@
 
 @media (min-width: $tablet-width) {
   .product-description {
-    @include centerer-tablet;
+    width: $width-tablet;
+    padding: 0 30px;
   }
 
   .product-description__title {
@@ -72,7 +69,6 @@
   .product-description__list {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: space-between;
   }
 
   .product-description__item {
@@ -114,7 +110,7 @@
 
 @media (min-width: $desktop-width) {
   .product-description {
-    @include centerer-desktop;
+    width: $width-desktop;
     padding: 0 110px;
     margin-bottom: 1058px;
   }
