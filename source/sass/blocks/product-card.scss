@@ -48,8 +48,8 @@
 
 .product-card__image--tablet,
 .product-card__image--desktop {
-    display: none;
-  }
+  display: none;
+}
 
 .product-card__button {
   padding: 10px;
@@ -102,13 +102,14 @@
   color: $base-grey;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .product-card {
     padding: 0 0 40px 0;
     flex-basis: 324px;
     box-sizing: border-box;
     background-color: #f2f2f2;
   }
+
   .product-card__container {
     flex-direction: column;
   }
