@@ -1,0 +1,124 @@
+.site-header {
+  padding: 10px 20px;
+  background-color: white;
+}
+
+.site-header__logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.site-header__img--tablet,
+.site-header__img--desktop {
+  display: none;
+}
+
+.site-header__menu-link {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 24px;
+  height: 18px;
+  margin-left: 61px;
+}
+
+.site-header__menu-toggle--closed {
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+
+  &::after {
+    position: absolute;
+    top: -7px;
+    left: 0;
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &::before {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+  }
+}
+
+.site-header__menu-toggle--opened {
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  width: 24px;
+  height: 2px;
+  background-color: transparent;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(-45deg);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-header {
+    width: $width-tablet;
+    padding: 0 30px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .site-header__img--mobile,
+  .site-header__img--desktop {
+    display: none;
+  }
+
+  .site-header__img--tablet {
+    display: block;
+  }
+
+  .site-header__menu-link {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-header {
+    width: $width-desktop;
+    padding: 54px 110px 0 110px;
+    background-color: transparent;
+  }
+
+  .site-header__img--mobile,
+  .site-header__img--tablet {
+    display: none;
+  }
+
+  .site-header__img--desktop {
+    display: block;
+  }
+}
