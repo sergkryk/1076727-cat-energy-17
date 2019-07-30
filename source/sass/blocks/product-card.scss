@@ -221,22 +221,23 @@
 
   .product-card__button {
     width: 70%;
-}
-
-.product-card__title--all {
-  padding: 0 40px;
-  &::before {
-    top: -81px;
-    left: 107px;
   }
 
-  &::after {
-    top: -81px;
-    left: 107px;
-  }
-}
+  .product-card__title--all {
+    padding: 0 40px;
 
-.product-card__content {
-  padding: 0 20px;
-}
+    &::before {
+      top: -81px;
+      left: 107px;
+    }
+
+    &::after {
+      top: -81px;
+      left: 107px;
+    }
+  }
+
+  .product-card__content {
+    padding: 0 20px;
+  }
 }
