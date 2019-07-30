@@ -17,16 +17,21 @@
 }
 
 .catalog__item {
-  margin-bottom: 23px;
+  margin-bottom: 128px;
 }
 
 @media (min-width: $tablet-width) {
   .catalog {
     width: $width-tablet;
-    padding: 0;
+    padding: 0 30px;;
+  }
+
+  .catalog__item {
+    margin-bottom: 140px;
   }
 
   .catalog__title {
+    margin-bottom: 165px;
     padding: 0;
     font-size: 60px;
     line-height: 60px;
