@@ -43,3 +43,15 @@
     justify-content: space-between;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    width: $width-desktop;
+    padding: 0 110px;
+    margin-top: 75px;
+  }
+
+  .catalog__item {
+    margin-bottom: 143px;
+  }
+}
