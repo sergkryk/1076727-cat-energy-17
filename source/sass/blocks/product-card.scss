@@ -1,5 +1,4 @@
 .product-card {
-  padding: 0 20px;
   border-top: 1px solid #ededed;
 }
 
@@ -102,7 +101,7 @@
   color: $base-grey;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $width-tablet) {
   .product-card {
     padding: 0 0 40px 0;
     flex-basis: 324px;
@@ -197,7 +196,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $width-desktop) {
   .product-card {
     flex-basis: 245px;
   }

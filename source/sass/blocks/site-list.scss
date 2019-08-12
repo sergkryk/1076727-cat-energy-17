@@ -12,7 +12,7 @@
   border-top: 1px solid #e6e6e6;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $width-tablet) {
   .site-list {
     display: flex;
     justify-content: flex-end;
@@ -38,10 +38,11 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $width-desktop) {
   .site-list__link {
     color: #ffffff;
     font-size: 20px;
+    line-height: 25px;
   }
 
   .site-list__link--active {
