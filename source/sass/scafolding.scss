@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-  width: 320px;
+  width: $width-mobile;
   padding: 0 20px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -44,4 +44,18 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media (min-width: $width-tablet) {
+  .container {
+    width: $width-tablet;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .container {
+    width: $width-desktop;
+    padding: 0 40px;
+  }
 }
