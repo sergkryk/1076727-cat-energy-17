@@ -26,14 +26,14 @@
 .site-header__menu-toggle--closed {
   position: absolute;
   top: 50%;
-  margin-top: -1px;
+  margin-top: -2px;
   width: 24px;
   height: 2px;
   background-color: #000000;
 
   &::after {
     position: absolute;
-    top: -7px;
+    top: -8px;
     left: 0;
     content: "";
     width: 24px;
@@ -43,7 +43,7 @@
 
   &::before {
     position: absolute;
-    top: 7px;
+    top: 8px;
     left: 0;
     content: "";
     width: 24px;

@@ -39,7 +39,8 @@
   }
 
   .page-footer__container {
-    padding: 44px 30px;
+    padding-top: 44px;
+    padding-bottom: 44px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,12 +67,16 @@
 }
 
 @media (min-width: $width-desktop) {
+  .page-footer {
+    margin-top: 985px;
+  }
   .page-footer__container {
+    padding-top: 48px;
     width: $width-desktop;
-    padding: 45px 110px;
   }
 
   .page-footer__logo {
+    margin-right: 19px;
     padding-right: 10px;
   }
 }
