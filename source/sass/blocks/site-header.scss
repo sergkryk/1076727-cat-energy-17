@@ -7,11 +7,8 @@
 .site-header__logo {
   display: inline-block;
   vertical-align: middle;
-}
-
-.site-header__img--tablet,
-.site-header__img--desktop {
-  display: none;
+  width: 190px;
+  min-height: 41px;
 }
 
 .site-header__menu-link {
@@ -91,13 +88,9 @@
     align-items: center;
   }
 
-  .site-header__img--mobile,
-  .site-header__img--desktop {
-    display: none;
-  }
-
-  .site-header__img--tablet {
-    display: block;
+  .site-header__logo {
+    width: 173px;
+    height: 58px;
   }
 
   .site-header__menu-link {
@@ -112,12 +105,8 @@
     background-color: transparent;
   }
 
-  .site-header__img--mobile,
-  .site-header__img--tablet {
-    display: none;
-  }
-
-  .site-header__img--desktop {
-    display: block;
+  .site-header__logo {
+    width: 202px;
+    height: 59px;
   }
 }
