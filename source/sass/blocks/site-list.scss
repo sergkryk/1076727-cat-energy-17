@@ -23,14 +23,12 @@
   .site-list {
     display: flex;
     justify-content: flex-end;
+    margin: 0;
   }
 
   .site-list__item {
     margin-left: 35px;
-
-    &::before {
-      display: none;
-    }
+    border-top: none;
   }
 
   .site-list__link {
@@ -58,6 +56,10 @@
 
   .site-list__link--active {
     box-shadow: 0 2px 0 0 #ffffff;
+  }
+
+  .site-list__link--active-green {
+    box-shadow: 0 2px 0 0 $base-green;
   }
 
   .site-list__link--catalog {

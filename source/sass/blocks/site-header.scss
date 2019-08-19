@@ -89,7 +89,7 @@
 
 @media (min-width: $width-tablet) {
   .site-header {
-    margin-bottom: 48px;
+    margin-bottom: 41px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -107,7 +107,7 @@
 
 @media (min-width: $width-desktop) {
   .site-header {
-    margin-bottom: 58px;
+    margin-bottom: -7px;
     padding-top: 54px;
     background-color: transparent;
   }

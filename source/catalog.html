@@ -12,47 +12,47 @@
   <div style="display: none">
     <include src="build/img/sprite.svg"></include>
   </div>
-  <header class="site-header">
-      <div class="container">
-        <a class="site-header__logo" href="index.html" aria-label="главная страница сайта">
-          <picture>
-            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="site-header__img" src="img/logo-mobile.svg" alt="логотип сайта">
-          </picture>
-        </a>
-        <a class="site-header__menu-link" href="#" aria-label="открыть меню">
-          <span class="site-header__menu-toggle--opened"></span>
-        </a>
-      </div>
+  <header class="site-header container">
+    <!-- <div class="container"> -->
+      <a class="site-header__logo" href="index.html" aria-label="главная страница сайта">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="site-header__img" src="img/logo-mobile.svg" alt="логотип сайта">
+        </picture>
+      </a>
+      <a class="site-header__menu-link" href="#" aria-label="открыть меню">
+        <span class="site-header__menu-toggle--opened"></span>
+      </a>
+    <!-- </div> -->
     <nav class="site-header__nav">
       <ul class="site-header__list site-list">
         <li class="site-list__item">
-          <div class="site-header__wrapper container">
+          <!-- <div class="site-header__wrapper container"> -->
             <a href="index.html" class="site-list__link site-list__link--catalog">Главная</a>
-          </div>
+          <!-- </div> -->
         </li>
         <li class="site-list__item">
-          <div class="site-header__wrapper container">
-            <a href="#" class="site-list__link site-list__link--catalog site-list__link--active">Каталог продукции</a>
-          </div>
+          <!-- <div class="site-header__wrapper container"> -->
+            <a href="#" class="site-list__link site-list__link--catalog site-list__link--active-green">Каталог продукции</a>
+          <!-- </div> -->
         </li>
         <li class="site-list__item">
-          <div class="site-header__wrapper container">
+          <!-- <div class="site-header__wrapper container"> -->
             <a href="form.html" class="site-list__link site-list__link--catalog">Подбор программы</a>
-          </div>
+          <!-- </div> -->
         </li>
       </ul>
     </nav>
   </header>
   <main class="site-content">
-    <section class="catalog">
-      <div class="product-card__wrapper container">
+    <section class="catalog container">
+      <!-- <div class="product-card__wrapper container"> -->
         <h1 class="catalog__title">Каталог продукции</h1>
-      </div>
+      <!-- </div> -->
       <ul class="catalog__list">
         <li class="catalog__item product-card">
-          <div class="product-card__wrapper container">
+          <!-- <div class="product-card__wrapper container"> -->
             <div class="product-card__container">
               <div class="product-card__img-wrapper">
                 <picture>
@@ -91,10 +91,10 @@
               </div>
             </div>
             <a class="product-card__button button--main" href="#">заказать</a>
-          </div>
+          <!-- </div> -->
         </li>
         <li class="catalog__item product-card">
-          <div class="product-card__wrapper container">
+          <!-- <div class="product-card__wrapper container"> -->
             <div class="product-card__container">
               <div class="product-card__img-wrapper">
                 <picture>
@@ -102,7 +102,8 @@
                     srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
                     srcset="img/chicken-big-tablet@1x.webp 1x, img/chicken-big-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/chicken-big-mobile@1x.webp 1x, img/chicken-big-mobile@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/chicken-big-mobile@1x.webp 1x, img/chicken-big-mobile@2x.webp 2x">
                   <source media="(min-width: 1300px)"
                     srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
                   <source media="(min-width: 768px)"
@@ -130,10 +131,10 @@
               </div>
             </div>
             <a class="product-card__button button--main" href="#">заказать</a>
-          </div>
+          <!-- </div> -->
         </li>
         <li class="catalog__item product-card">
-          <div class="product-card__wrapper container">
+          <!-- <div class="product-card__wrapper container"> -->
             <div class="product-card__container">
               <div class="product-card__img-wrapper">
                 <picture>
@@ -169,10 +170,10 @@
               </div>
             </div>
             <a class="product-card__button button--main" href="#">заказать</a>
-          </div>
+          <!-- </div> -->
         </li>
         <li class="catalog__item product-card">
-          <div class="product-card__wrapper container">
+          <!-- <div class="product-card__wrapper container"> -->
             <div class="product-card__container">
               <div class="product-card__img-wrapper">
                 <picture>
@@ -208,10 +209,10 @@
               </div>
             </div>
             <a class="product-card__button button--main" href="#">заказать</a>
-          </div>
+          <!-- </div> -->
         </li>
         <li class="catalog__item product-card">
-          <div class="product-card__wrapper container">
+          <!-- <div class="product-card__wrapper container"> -->
             <div class="product-card__container">
               <div class="product-card__img-wrapper">
                 <picture>
@@ -248,10 +249,10 @@
               </div>
             </div>
             <a class="product-card__button button--main" href="#">заказать</a>
-          </div>
+          <!-- </div> -->
         </li>
         <li class="catalog__item product-card">
-          <div class="product-card__wrapper container">
+          <!-- <div class="product-card__wrapper container"> -->
             <div class="product-card__container">
               <div class="product-card__img-wrapper">
                 <picture>
@@ -288,10 +289,10 @@
               </div>
             </div>
             <a class="product-card__button button--main" href="#">заказать</a>
-          </div>
+          <!-- </div> -->
         </li>
         <li class="catalog__item product-card">
-          <div class="product-card__wrapper container">
+          <!-- <div class="product-card__wrapper container"> -->
             <div class="product-card__container">
               <div class="product-card__img-wrapper">
                 <picture>
@@ -327,14 +328,14 @@
               </div>
             </div>
             <a class="product-card__button button--main" href="#">заказать</a>
-          </div>
+          <!-- </div> -->
         </li>
         <li class="catalog__item product-card product-card--show-all">
-          <div class="product-card__wrapper container">
+          <!-- <div class="product-card__wrapper container"> -->
             <h2 class="product-card__title product-card__title--all">ПОКАЗАТЬ ЕЩЕ 100500 ТОВАРОВ</h2>
             <p class="product-card__content">На самом деле вкусов гораздо больше!</p>
             <a class="product-card__button button--main button--desaturate" href="#">показать все</a>
-          </div>
+          <!-- </div> -->
         </li>
       </ul>
     </section>
@@ -343,58 +344,62 @@
         <h2 class="additional-products__title">
           Дополнительные товары
         </h2>
-        <ul class="additional-products__list extras-list">
-          <li class="extras-list__item">
-            <h3 class="extras-list__title">сахарозаменитель</h3>
-            <table class="extras-list__table">
-              <tr class="extras-list__row">
-                <td class="extras-list__data">1 упаковка (100 г)</td>
-                <td class="extras-list__data extras-list__data--right">200 Р</td>
-              </tr>
-            </table>
-            <a class="product-card__button button--main" href="#">заказать</a>
-          </li>
-          <li class="extras-list__item">
-            <h3 class="extras-list__title">питьевая вода</h3>
-            <table class="extras-list__table">
-              <tr class="extras-list__row">
-                <td class="extras-list__data">5 литров</td>
-                <td class="extras-list__data extras-list__data--right">50 Р</td>
-              </tr>
-            </table>
-            <a class="product-card__button button--main" href="#">заказать</a>
-          </li>
-          <li class="extras-list__item">
-            <h3 class="extras-list__title">молоко</h3>
-            <table class="extras-list__table">
-              <tr class="extras-list__row">
-                <td class="extras-list__data">1 литр</td>
-                <td class="extras-list__data extras-list__data--right">100 Р</td>
-              </tr>
-            </table>
-            <a class="product-card__button button--main" href="#">заказать</a>
-          </li>
-          <li class="extras-list__item">
-            <h3 class="extras-list__title">витамины</h3>
-            <table class="extras-list__table">
-              <tr class="extras-list__row">
-                <td class="extras-list__data">1 упаковка (30 г)</td>
-                <td class="extras-list__data extras-list__data--right">300 Р</td>
-              </tr>
-            </table>
-            <a class="product-card__button button--main" href="#">заказать</a>
-          </li>
-        </ul>
-        <a class="additional-products__btn-all order-all" href="#">
-          <p class="order-all__text">Закажите все и&nbspполучите чехол&nbspдля кота в подарок!</p>
-        </a>
+        <div class="additional-products__flex-container">
+          <ul class="additional-products__list extras-list">
+            <li class="extras-list__item">
+              <h3 class="extras-list__title">сахарозаменитель</h3>
+              <table class="extras-list__table">
+                <tr class="extras-list__row">
+                  <td class="extras-list__data extras-list__data--value">1 упаковка (100 г)</td>
+                  <td class="extras-list__data extras-list__data--price">200 Р</td>
+                </tr>
+              </table>
+              <a class="extras-list__button button--main" href="#">заказать</a>
+            </li>
+            <li class="extras-list__item">
+              <h3 class="extras-list__title">питьевая вода</h3>
+              <table class="extras-list__table">
+                <tr class="extras-list__row">
+                  <td class="extras-list__data extras-list__data--value">5 литров</td>
+                  <td class="extras-list__data extras-list__data--price">50 Р.</td>
+                </tr>
+              </table>
+              <a class="extras-list__button button--main" href="#">заказать</a>
+            </li>
+            <li class="extras-list__item">
+              <h3 class="extras-list__title">молоко</h3>
+              <table class="extras-list__table">
+                <tr class="extras-list__row">
+                  <td class="extras-list__data extras-list__data--value">1 литр</td>
+                  <td class="extras-list__data extras-list__data--price">100 Р.</td>
+                </tr>
+              </table>
+              <a class="extras-list__button button--main" href="#">заказать</a>
+            </li>
+            <li class="extras-list__item">
+              <h3 class="extras-list__title">витамины</h3>
+              <table class="extras-list__table">
+                <tr class="extras-list__row">
+                  <td class="extras-list__data extras-list__data--value">1 упаковка (30 г)</td>
+                  <td class="extras-list__data extras-list__data--price">300 Р.</td>
+                </tr>
+              </table>
+              <a class="extras-list__button button--main" href="#">заказать</a>
+            </li>
+          </ul>
+          <a class="additional-products__btn-all order-all" href="#">
+            <p class="order-all__text">Закажите все и&nbspполучите чехол&nbspдля кота в подарок!</p>
+          </a>
+        </div>
       </div>
     </section>
      <section class="contacts">
-        <h2 class="contacts__title visually-hidden">Наши контакты</h2>
-        <div class="contacts__wrapper container">
+      <h2 class="contacts__title visually-hidden">Наши контакты</h2>
+      <div class="contacts__centerer container">
+        <div class="contacts__wrapper">
           <p class="contacts__proposal">приглашаем к&nbspсотрудничеству дилеров!</p>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+        </div>
       </div>
       <div class="contacts__img-wrapper">
         <!-- <picture>
@@ -408,8 +413,9 @@
           <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
             alt="Изображение карты где мы находимся" class="contacts__img-map">
         </picture> -->
-        <!-- <iframe class="contacts__iframe-map" src="https://yandex.ru/map-widget/v1/-/CGvW5O2m" frameborder="0" allowfullscreen="false"></iframe> -->
-        <iframe class="contacts__iframe-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A9f30786edb2ffabb477922650fc71471c381745ce9bdfdbe786eed46da0a0ee8&amp;source=constructor" frameborder="0"></iframe>
+        <iframe class="contacts__iframe-map"
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A9f30786edb2ffabb477922650fc71471c381745ce9bdfdbe786eed46da0a0ee8&amp;source=constructor"
+          frameborder="0"></iframe>
       </div>
     </section>
   </main>
