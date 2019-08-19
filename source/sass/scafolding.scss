@@ -17,6 +17,36 @@ img {
   box-sizing: border-box;
 }
 
+.centerer-mobile {
+  width: $width-mobile;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media(min-width: $width-tablet)  {
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.centerer-tablet {
+
+  @media(min-width: $width-tablet) {
+    width: $width-tablet;
+    padding: 0 30px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  @media(min-width: $width-desktop) {
+    width: $width-desktop;
+    padding: 0 40px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+
 .button--main {
   display: block;
   box-sizing: border-box;
