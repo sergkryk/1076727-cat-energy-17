@@ -1,0 +1,42 @@
+.extras-list {
+  @include list-reset;
+}
+
+.extras-list__item {
+  padding-bottom: 16px;
+  border-top: 1px solid #cdcdcd;
+
+  &:last-of-type {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.extras-list__title {
+  margin: 0 0 14px 0;
+  padding: 13px 0 0 2px;
+  font-family: $base-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.extras-list__table {
+  margin-bottom: 15px;
+  width: 100%;
+  border-collapse: collapse;
+  font-family: $arial-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: $base-grey;
+}
+
+.extras-list__data {
+  padding: 0;
+}
+
+.extras-list__data--right {
+  text-align: right;
+}

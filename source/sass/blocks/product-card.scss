@@ -43,10 +43,15 @@
 
 .product-card__img-wrapper {
   width: 50%;
+  flex-shrink: 0;
 }
 
 .product-card__image {
   width: 140px;
+  height: 142px;
+}
+
+.product-card__image--big {
   height: 144px;
 }
 
