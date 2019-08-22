@@ -85,6 +85,85 @@
         </li>
       </ul>
     </section>
+    <section class="example">
+      <div class="example__wrapper container">
+        <h2 class="example__title">Живой пример</h2>
+        <p class="example__description">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
+        <ul class="example__list">
+          <li class="example__item">
+            <p>5 КГ</p>
+            <span>снижение веса</span>
+          </li>
+          <li class="example__item">
+            <p>60 дней</p>
+            <span>затрачено времени</span>
+          </li>
+          <li class="example__item example__item-total">
+            <p class="example__total">затраты на питание: 15 000 руб.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="example__image-container">
+        <div class="example__image-wrapper container">
+          <picture>
+            <source type="image/webp" media="(min-width: 1300px)"
+              srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+            <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+            <img class="example__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"
+              alt="изображение кота до применения нашей программы">
+          </picture>
+        </div>
+        <div class="example__image-wrapper container visually-hidden">
+          <source type="image/webp" media="(min-width: 1300px)"
+            srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+          <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+          <img class="example__image" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x"
+            alt="изображение кота после применения нашей программы">
+        </div>
+        <div class="example__toggle-wrapper container">
+          <button class="example__toggle-btn example__toggle-btn--before" type="submit">было</button>
+          <span class="example__toggle-bar example__toggle-bar--before visually-hidden"></span>
+          <input class="example__range" type="range">
+          <button class="example__toggle-btn example__toggle-btn--after" type="submit">стало</button>
+        </div>
+      </div>
+    </section>
+    <section class="contacts contacts--index-page">
+      <h2 class="contacts__title visually-hidden">Наши контакты</h2>
+      <div class="contacts__centerer container">
+        <div class="contacts__wrapper">
+          <p class="contacts__proposal">приглашаем к&nbspсотрудничеству дилеров!</p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+        </div>
+      </div>
+      <div class="contacts__img-wrapper">
+        <!-- <picture>
+          <source type="image/webp" media="(min-width: 1300px)"
+            srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
+            alt="Изображение карты где мы находимся" class="contacts__img-map">
+        </picture> -->
+        <iframe class="contacts__iframe-map"
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A9f30786edb2ffabb477922650fc71471c381745ce9bdfdbe786eed46da0a0ee8&amp;source=constructor"
+          frameborder="0"></iframe>
+      </div>
+    </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__container container">
