@@ -24,7 +24,7 @@
   color: #444444;
 }
 
-.example__list  {
+.example__list {
   @include list-reset;
   display: flex;
   justify-content: space-between;
@@ -44,8 +44,8 @@
 }
 
 .example__item-total {
-    width: 100%;
-    border: none;
+  width: 100%;
+  border: none;
 }
 
 .example__item p {
@@ -164,14 +164,25 @@
 
 @media(min-width: $width-tablet) {
   .example {
-    margin-top: -29px;
+    position: relative;
+    margin-top: -3px;
     margin-bottom: 0;
     background-color: transparent;
-    border-top: 1px solid #f2f2f2;
   }
 
-  .example__wrapper {
-    padding-top: 25px;
+  .example--grey-background {
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      height: 460px;
+      z-index: -1;
+
+      background-color: #f2f2f2;
+    }
   }
 
   .example__title {
@@ -227,8 +238,8 @@
   }
 
   .example__image-container {
+    position: relative;
     margin-top: 234px;
-    background-color: #f2f2f2;
   }
 
   .example__image {
@@ -238,7 +249,7 @@
   }
 
   .example__toggle-wrapper {
-    padding: 367px 100px 74px;
+    padding: 367px 68px 74px;
   }
 
   .example__range {
@@ -278,3 +289,62 @@
   }
 }
 
+@media(min-width: $width-desktop) {
+  .example {
+    margin-top: -26px;
+
+    display: flex;
+  }
+
+  .example__wrapper {
+    width: 610px;
+    flex-shrink: 0;
+  }
+
+  .example__title {
+    margin-bottom: 137px;
+  }
+
+  .example__description {
+    padding: 0 90px 0 2px;
+    margin-bottom: 68px;
+  }
+
+  .example__list {
+    padding-left: 2px;
+    flex-wrap: wrap;
+  }
+
+  .example__item span {
+    background-color: #f2f2f2;
+  }
+
+  .example__item-total {
+    margin: 20px 0 0;
+    width: auto;
+  }
+
+  .example__total  {
+    position: relative;
+  }
+
+  .example__total span {
+    font: inherit;
+    position: absolute;
+    top: 14px;
+    left: 189px;
+  }
+
+  .example__image-container {
+    margin-top: 130px;
+  }
+
+  .example__image {
+    top: -167px;
+    left: 2px;
+  }
+
+  .example__toggle-wrapper {
+    padding: 390px 42px 74px;
+  }
+}

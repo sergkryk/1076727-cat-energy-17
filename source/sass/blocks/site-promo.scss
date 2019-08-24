@@ -77,23 +77,22 @@
 @media (min-width: $width-desktop) {
   .site-promo {
     padding: 0 120px;
-    margin-top: -181px;
-    background-image: url("../../img/index-can-desktop@1x.png"), url("../../img/index-background-desktop@1x.jpg");
-    background-position: 490px 142px, 648px top;
+    background-image: url("../../img/index-can-desktop@1x.png");
+    background-position: 490px 36px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/index-can-desktop@2x.png"), url("../../img/index-background-desktop@2x.jpg");
-      background-size: 552px auto, 720px auto;
+      background-image: url("../../img/index-can-desktop@2x.png");
+      background-size: 552px auto;
     }
   }
 
   .site-promo__title {
-    padding-top: 222px;
+    padding-top: 116px;
     padding-right: 630px;
   }
 
   .site-promo__slogan {
-    margin-bottom: 52px;
+    margin-bottom: 53px;
   }
 
   .site-promo__link {

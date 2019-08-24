@@ -48,7 +48,7 @@
 
 @media(min-width: $width-tablet) {
   .contacts__wrapper {
-    padding: 62px 71px 0 71px;
+    padding: 64px 71px 0 71px;
   }
 
   .contacts__centerer {
@@ -89,10 +89,6 @@
 }
 
 @media(min-width: $width-desktop) {
-  .contacts {
-    margin-top: 10px;
-  }
-
   .contacts__centerer {
     position: relative;
   }

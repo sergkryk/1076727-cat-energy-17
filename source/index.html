@@ -30,7 +30,7 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="page-main page-main--green-background">
     <section class="site-promo container">
       <h1 class="site-promo__title">Функциональное питание для котов</h1>
       <p class="site-promo__slogan">Занялся собой? Займись котом!</p>
@@ -85,7 +85,7 @@
         </li>
       </ul>
     </section>
-    <section class="example">
+    <section class="example example--grey-background">
       <div class="example__wrapper container">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__description">
@@ -102,25 +102,23 @@
             <span>затрачено времени</span>
           </li>
           <li class="example__item example__item-total">
-            <p class="example__total">затраты на питание: 15 000 руб.</p>
+            <p class="example__total">затраты на питание: <span>15 000 руб.</span></p>
           </li>
         </ul>
       </div>
-      <div class="example__image-container">
-        <div class="example__image-wrapper container">
-          <picture>
-            <source type="image/webp" media="(min-width: 1300px)"
-              srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
-            <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-            <img class="example__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"
-              alt="изображение кота до применения нашей программы">
-          </picture>
-        </div>
-        <div class="example__image-wrapper container visually-hidden">
+      <div class="example__image-container container">
+        <picture>
+          <source type="image/webp" media="(min-width: 1300px)"
+            srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+          <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+          <img class="example__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"
+            alt="изображение кота до применения нашей программы">
+        </picture>
+        <picture>
           <source type="image/webp" media="(min-width: 1300px)"
             srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)"
@@ -128,9 +126,9 @@
           <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
           <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-          <img class="example__image" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x"
+          <img class="example__image visually-hidden" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x"
             alt="изображение кота после применения нашей программы">
-        </div>
+        </picture>
         <div class="example__toggle-wrapper container">
           <button class="example__toggle-btn example__toggle-btn--before" type="submit">было</button>
           <span class="example__toggle-bar example__toggle-bar--before visually-hidden"></span>
