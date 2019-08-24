@@ -3,6 +3,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
+  color: $base-black;
 }
 
 img {
@@ -15,6 +16,15 @@ img {
   padding: 0 20px;
   margin: 0 auto;
   box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 .centerer-mobile {
