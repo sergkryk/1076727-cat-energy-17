@@ -92,6 +92,12 @@ html {
     width: $width-tablet;
     padding: 0 30px;
   }
+
+  .container--form-page {
+    width: $width-tablet;
+    margin: 0 auto;
+    padding: 0 67px 0 72px;
+  }
 }
 
 @media (min-width: $width-desktop) {

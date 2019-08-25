@@ -158,3 +158,91 @@
 
   border: none;
 }
+
+@media(min-width: $width-tablet) {
+  .form {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .form__title {
+    margin-bottom: 55px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .form__instruction {
+    margin-bottom: 44px;
+    padding-left: 40px;
+    padding-right: 300px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__subtitle {
+    margin: -32px 78px 76px -23px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form__subtitle-comments {
+    margin-right: 410px;
+    margin-bottom: 75px;
+  }
+
+  .form__subtitle-extra {
+    // margin-top: 10px;
+  }
+
+  .form__fieldset--border {
+    border: none;
+  }
+
+  .form__fieldset--border-green {
+    margin-top: 56px;
+  }
+
+  .form__fieldset--extra {
+    margin-top: 87px;
+  }
+
+  .form__list {
+    margin-bottom: 41px;
+  }
+
+  .form__aim-list {
+    padding: 23px 0 0 27px;
+    border: 1px solid #ededed;
+  }
+
+  .form__item {
+    margin-bottom: 21px;
+  }
+
+  .form__aim-item {
+    margin-bottom: 13px;
+  }
+
+  .form__item--margin-reduced {
+    margin-bottom: 25px;
+  }
+
+  .form__input {
+    padding: 14px 20px 22px;
+  }
+
+  .form__comments-area {
+    padding-left: 17px;
+  }
+
+  .form__input::placeholder {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .form__radio-indicator {
+    margin-right: 19px;
+    width: 40px;
+    height: 40px;
+  }
+}
