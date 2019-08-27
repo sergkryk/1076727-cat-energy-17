@@ -74,8 +74,8 @@
             <span class="selection__radio-indicator"></span>
             <label class="selection__radio-label" for="fit">похудение</label>
           </li>
-          <li class="selection__aim-item">
-            <input class="selection__radio-button" type="radio" name="program-aim" id="power" value="power">
+          <li class="selection__aim-item selection__aim-item--disabled">
+            <input class="selection__radio-button" type="radio" name="program-aim" id="power" value="power" disabled>
             <span class="selection__radio-indicator"></span>
             <label class="selection__radio-label" for="power">набор массы</label>
           </li>
@@ -93,10 +93,16 @@
             <li class="selection__contacts-item">
               <label class="selection__contacts-label" for="email">e-mail:*</label>
               <input class="selection__email-input" id="email" type="email" placeholder="kuklachev@gmail.com" required>
+              <svg class="selection__input-icon" width="17" height="15">
+                <use xlink:href="#icon-mail"></use>
+              </svg>
             </li>
             <li class="selection__contacts-item">
               <label class="selection__contacts-label" for="phone">телефон:*</label>
               <input class="selection__phone-input" id="phone" type="text" placeholder="8 (960) 900-60-90" required>
+              <svg class="selection__input-icon" width="20" height="20">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
             </li>
           </ul>
         </div>
@@ -122,8 +128,8 @@
               <span class="selection__checkbox-indicator"></span>
               <label class="selection__checkbox-label" for="water">Питьевая вода</label>
             </li>
-            <li class="selection__extras-item">
-              <input class="selection__checkbox" type="checkbox" name="extras" id="milk">
+            <li class="selection__extras-item selection__extras-item--disabled">
+              <input class="selection__checkbox" type="checkbox" name="extras" id="milk" disabled>
               <span class="selection__checkbox-indicator"></span>
               <label class="selection__checkbox-label" for="milk">Молоко</label>
             </li>
@@ -136,7 +142,7 @@
         </div>
       </fieldset>
       <div class="selection__button-wrapper selection__wrapper">
-        <button class="selection__button button--main" type="submit">отправить заявку</button>
+        <button class="selection__button button-main" type="submit">отправить заявку</button>
         <span class="selection__note">* &mdash; Обязательные поля</span>
       </div>
     </form>

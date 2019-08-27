@@ -13,7 +13,7 @@
 .selection textarea {
   padding: 12.5px;
   min-width: 50px;
-  border: 1px solid #ededed;
+  border: 1px solid #e6e6e6;
 
   font-family: $base-font;
   font-size: 16px;
@@ -22,6 +22,26 @@
   text-transform: uppercase;
 
   flex-grow: 1;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 1px solid #444444;
+  }
+
+  &:invalid {
+    border: 1px solid #ff8282;
+  }
+}
+
+.selection input:focus+.selection__input-icon {
+  fill: #64a83b;
+}
+
+.selection input:invalid+.selection__input-icon {
+  fill: #ff8282;
 }
 
 .selection label {
@@ -91,6 +111,20 @@
   align-items: center;
 
   margin-bottom: 13px;
+
+  opacity: 0.6;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.selection__aim-item--disabled {
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.3;
+  }
 }
 
 .selection__aim-item--margin-reduced {
@@ -108,7 +142,25 @@
   width: 29px;
   height: 29px;
   border-radius: 50%;
-  border: 1px solid #ededed;
+  box-shadow: 0 0 0 2px #bababa;
+}
+
+.selection__radio-button:checked+.selection__radio-indicator {
+  width: 29px;
+  height: 29px;
+  border: 8px solid #ffffff;
+  background-color: #64a83b;
+}
+
+.selection__radio-button:disabled+.selection__radio-indicator {
+  width: 29px;
+  height: 29px;
+  border: 8px solid #ffffff;
+  background-color: #64a83b;
+}
+
+.selection__radio-button:focus+.selection__radio-indicator {
+  outline: 1px dotted #444444;
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -179,6 +231,13 @@
   margin-bottom: 14px;
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.selection__input-icon {
+  position: absolute;
+  right: 15px;
+  fill: #222222;
 }
 
 .selection__contacts-label {
@@ -223,6 +282,19 @@
   display: flex;
   align-items: center;
   margin-bottom: 13px;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.selection__extras-item--disabled {
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.3;
+  }
 }
 
 .selection__checkbox {
@@ -235,7 +307,25 @@
   display: block;
   width: 29px;
   height: 29px;
-  border: 1px solid #ededed;
+  border: 1px solid #bababa;
+}
+
+.selection__checkbox:checked+.selection__checkbox-indicator {
+  background-image: url(../img/icon-tick.svg);
+  background-repeat: no-repeat;
+  background-size: 21px;
+  background-position: left 4px top 7px;
+}
+
+.selection__checkbox:disabled+.selection__checkbox-indicator {
+  background-image: url(../img/icon-tick.svg);
+  background-repeat: no-repeat;
+  background-size: 21px;
+  background-position: left 4px top 7px;
+}
+
+.selection__checkbox:focus+.selection__checkbox-indicator {
+  outline: 1px dotted #444444;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -271,9 +361,14 @@
 
 @media(min-width: $width-tablet) {
 
-  .selection input,
+  .selection input {
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   .selection textarea {
-    padding: 14px 20px 15px;
+    padding: 14px 20px 17px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -315,7 +410,7 @@
   }
 
   .selection__data-item {
-    margin-bottom: 21px;
+    margin-bottom: 19px;
   }
 
   .selection__weight-input {
@@ -333,6 +428,20 @@
     margin-right: 19px;
     width: 40px;
     height: 40px;
+  }
+
+  .selection__radio-button:checked+.selection__radio-indicator {
+    width: 40px;
+    height: 40px;
+    border: 10px solid #ffffff;
+    background-color: #64a83b;
+  }
+
+  .selection__radio-button:disabled+.selection__radio-indicator {
+    width: 40px;
+    height: 40px;
+    border: 10px solid #ffffff;
+    background-color: #64a83b;
   }
 
   .selection__green-line--shadow {
@@ -382,7 +491,7 @@
   }
 
   .selection__extras-fieldset {
-    margin-top: 47px;
+    margin-top: 44px;
     margin-bottom: 0;
   }
 
@@ -407,6 +516,18 @@
   .selection__checkbox-indicator {
     width: 40px;
     height: 40px;
+  }
+
+  .selection__checkbox:checked+.selection__checkbox-indicator {
+    background-size: 22px;
+    background-position: left 8px top 11px;
+  }
+
+  .selection__checkbox:disabled+.selection__checkbox-indicator {
+    background-image: url(../img/icon-tick.svg);
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: left 8px top 11px;
   }
 
   .selection__button-wrapper {

@@ -56,6 +56,10 @@
   text-decoration: none;
   text-transform: uppercase;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -66,6 +70,15 @@
     top: 7px;
     right: -35px;
   }
+}
+
+.program__link:hover {
+
+  &::after {
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+  width: 32px;
+  right: -59px;
+ }
 }
 
 .program__title--fit {

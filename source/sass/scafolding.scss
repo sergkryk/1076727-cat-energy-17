@@ -11,13 +11,6 @@ img {
   height: auto;
 }
 
-.container {
-  width: $width-mobile;
-  padding: 0 20px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
 html {
   box-sizing: border-box;
 }
@@ -25,6 +18,22 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .centerer-mobile {
@@ -53,7 +62,7 @@ html {
   }
 }
 
-.button--main {
+.button-main {
   display: block;
   box-sizing: border-box;
   padding: 16px 27px 16px 25px;
@@ -64,27 +73,36 @@ html {
   text-transform: uppercase;
   text-decoration: none;
   background-color: $base-green;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: #8fc46e;
+  background-color: #5eaa2f;
+  }
 }
 
-.button--desaturate {
+.button-main--desaturate {
   background-color: #f2f2f2;
   color: $base-black;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: #b9b9b9;
+  }
 }
 
-.visually-hidden:not(:focus):not(:active) {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.container {
+  width: $width-mobile;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 @media (min-width: $width-tablet) {
