@@ -45,101 +45,103 @@
       </ul>
     </nav>
   </header>
-  <section class="form">
-    <div class="form__wrapper container">
-      <h2 class="form__title">Подбор программы</h2>
-      <p class="form__instruction">заполните анкету и мы подберем программу питания для вашего кота</p>
+  <section class="selection">
+    <div class="selection__wrapper">
+      <h2 class="selection__title">Подбор программы</h2>
+      <p class="selection__instruction">заполните анкету и мы подберем программу питания для вашего кота</p>
     </div>
-    <form action="" class="form__content">
-      <fieldset class="form__fieldset form__fieldset--border">
-        <ul class="form__list container container--form-page">
-          <li class="form__item">
-            <label class="form__label" for="name">имя:*</label>
-            <input class="form__input" id="name" type="text" placeholder="барсик" required>
+    <form action="" class="selection__form">
+      <fieldset class="selection__data-fieldset selection__wrapper">
+        <ul class="selection__data-list">
+          <li class="selection__data-item">
+            <label class="selection__data-label" for="name">имя:*</label>
+            <input class="selection__name-input" id="name" type="text" placeholder="барсик" required>
           </li>
-          <li class="form__item">
-            <label class="form__label" for="weight">вес (кг):*</label>
-            <input class="form__input" id="weight" type="text" placeholder="7" required>
+          <li class="selection__data-item">
+            <label class="selection__data-label" for="weight">вес (кг):*</label>
+            <input class="selection__weight-input" id="weight" type="text" placeholder="7" required>
           </li>
-          <li class="form__item">
-            <label class="form__label" for="age">возраст (лет):</label>
-            <input class="form__input" id="age" type="text" placeholder="7">
+          <li class="selection__data-item">
+            <label class="selection__data-label" for="age">возраст (лет):</label>
+            <input class="selection__age-input" id="age" type="text" placeholder="7">
+          </li>
+        </ul>
+        <!-- </fieldset> -->
+        <!-- <fieldset class="selection__aim-fieldset"> -->
+        <ul class="selection__aim-list">
+          <li class="selection__aim-item">
+            <input class="selection__radio-button" type="radio" name="program-aim" id="fit" value="fit" checked>
+            <span class="selection__radio-indicator"></span>
+            <label class="selection__radio-label" for="fit">похудение</label>
+          </li>
+          <li class="selection__aim-item">
+            <input class="selection__radio-button" type="radio" name="program-aim" id="power" value="power">
+            <span class="selection__radio-indicator"></span>
+            <label class="selection__radio-label" for="power">набор массы</label>
+          </li>
+          <li class="selection__aim-item selection__aim-item--margin-reduced">
+            <input class="selection__radio-button" type="radio" name="program-aim" id="advise" value="advise">
+            <span class="selection__radio-indicator"></span>
+            <label class="selection__radio-label" for="advise">не знаю (нужен ваш совет)</label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__fieldset form__fieldset--border container--form-page">
-        <ul class="form__list form__aim-list centerer-mobile">
-          <li class="form__item form__aim-item">
-            <input type="radio" name="program-aim" id="fit" value="fit" checked>
-            <span class="form__radio-indicator"></span>
-            <label class="form__radio-label" for="fit">похудение</label>
-          </li>
-          <li class="form__item form__aim-item">
-            <input type="radio" name="program-aim" id="power" value="power">
-            <span class="form__radio-indicator"></span>
-            <label class="form__radio-label" for="power">набор массы</label>
-          </li>
-          <li class="form__item form__aim-item form__item--margin-reduced">
-            <input type="radio" name="program-aim" id="advise" value="advise">
-            <span class="form__radio-indicator"></span>
-            <label class="form__radio-label" for="advise">не знаю (нужен ваш совет)</label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="form__fieldset form__fieldset--border-green">
-        <div class="form__wrapper container container--form-page">
-          <h3 class="form__subtitle">Контактные данные (владельца кота)</h3>
-          <ul class="form__contacts-list">
-            <li class="form__item">
-              <label class="form__label-contacts" for="email">e-mail:*</label>
-              <input class="form__input" id="email" type="email" placeholder="kuklachev@gmail.com" required>
+      <fieldset class="selection__contacts-fieldset selection__green-line--shadow">
+        <div class="selection__wrapper">
+          <h3 class="selection__contacts-title">Контактные данные (владельца кота)</h3>
+          <ul class="selection__contacts-list">
+            <li class="selection__contacts-item">
+              <label class="selection__contacts-label" for="email">e-mail:*</label>
+              <input class="selection__email-input" id="email" type="email" placeholder="kuklachev@gmail.com" required>
             </li>
-            <li class="form__item">
-              <label class="form__label-contacts" for="phone">телефон:*</label>
-              <input class="form__input" id="phone" type="text" placeholder="8 (960) 900-60-90" required>
+            <li class="selection__contacts-item">
+              <label class="selection__contacts-label" for="phone">телефон:*</label>
+              <input class="selection__phone-input" id="phone" type="text" placeholder="8 (960) 900-60-90" required>
             </li>
           </ul>
         </div>
       </fieldset>
-      <fieldset class="form__fieldset form__fieldset--border-green form__fieldset--comments">
-        <div class="form__wrapper container container--form-page">
-          <h3 class="form__subtitle form__subtitle-comments">Комментарий</h3>
-          <textarea class="form__comments-area form__input" name="comments" cols="30" rows="7"
+      <fieldset class="selection__comments-fieldset selection__green-line">
+        <div class="selection__wrapper">
+          <h3 class="selection__comments-title">Комментарий</h3>
+          <textarea class="selection__comments-area" name="comments" cols="30" rows="7"
             placeholder="расскажите обо всех повадках кота"></textarea>
         </div>
       </fieldset>
-      <fieldset class="form__fieldset form__fieldset--border-green form__fieldset--extra">
-        <div class="form__wrapper container container--form-page">
-          <h3 class="form__subtitle form__subtitle-extra">Дополнительно</h3>
-          <ul class="form__extras-list">
-            <li class="form__item">
-              <input type="checkbox" name="extras" id="sweetener">
-              <span class="form__checkbox-indicator"></span>
-              <label for="sweetener">Сахарозаменитель</label>
+      <fieldset class="selection__extras-fieldset selection__green-line">
+        <div class="selection__wrapper">
+          <h3 class="selection__extras-title">Дополнительно</h3>
+          <ul class="selection__extras-list">
+            <li class="selection__extras-item">
+              <input class="selection__checkbox" type="checkbox" name="extras" id="sweetener">
+              <span class="selection__checkbox-indicator"></span>
+              <label class="selection__checkbox-label" for="sweetener">Сахарозаменитель</label>
             </li>
-            <li class="form__item">
-              <input type="checkbox" name="extras" id="water">
-              <span class="form__checkbox-indicator"></span>
-              <label for="water">Питьевая вода</label>
+            <li class="selection__extras-item">
+              <input class="selection__checkbox" type="checkbox" name="extras" id="water">
+              <span class="selection__checkbox-indicator"></span>
+              <label class="selection__checkbox-label" for="water">Питьевая вода</label>
             </li>
-            <li class="form__item">
-              <input type="checkbox" name="extras" id="milk">
-              <span class="form__checkbox-indicator"></span>
-              <label for="milk">Молоко</label>
+            <li class="selection__extras-item">
+              <input class="selection__checkbox" type="checkbox" name="extras" id="milk">
+              <span class="selection__checkbox-indicator"></span>
+              <label class="selection__checkbox-label" for="milk">Молоко</label>
             </li>
-            <li class="form__item">
-              <input type="checkbox" name="extras" id="vitamins">
-              <span class="form__checkbox-indicator"></span>
-              <label for="vitamins">Витамины</label>
+            <li class="selection__extras-item">
+              <input class="selection__checkbox" type="checkbox" name="extras" id="vitamins">
+              <span class="selection__checkbox-indicator"></span>
+              <label class="selection__checkbox-label" for="vitamins">Витамины</label>
             </li>
           </ul>
         </div>
       </fieldset>
-      <button class="form__button button--main" type="submit">отправить заявку</button>
-      <span class="form__note">* &mdash; Обязательные поля</span>
+      <div class="selection__button-wrapper selection__wrapper">
+        <button class="selection__button button--main" type="submit">отправить заявку</button>
+        <span class="selection__note">* &mdash; Обязательные поля</span>
+      </div>
     </form>
   </section>
-  <section class="contacts contacts--index-page">
+  <section class="contacts">
     <h2 class="contacts__title visually-hidden">Наши контакты</h2>
     <div class="contacts__centerer container">
       <div class="contacts__wrapper">
