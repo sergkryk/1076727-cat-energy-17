@@ -18,10 +18,6 @@
   }
 }
 
-.site-header__logo--disabled {
-  opacity: 0.6;
-}
-
 .site-header__menu-link {
   display: inline-block;
   vertical-align: middle;
@@ -88,6 +84,20 @@
     height: 2px;
     background-color: #000000;
     transform: rotate(-45deg);
+  }
+}
+
+@media(max-width: $width-tablet) {
+  .site-header__nav--closed {
+    display: none;
+  }
+
+  .site-header__nav--opened {
+    display: block;
+  }
+
+  .site-header__nav--nojs {
+    display: block;
   }
 }
 
