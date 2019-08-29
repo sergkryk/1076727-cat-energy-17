@@ -9,6 +9,7 @@ var afterButton = document.querySelector('.example__toggle-btn--after');
 var barIndicator = document.querySelector('.example__toggle-bar');
 
 navMain.classList.remove('site-header__nav--nojs');
+navMenu.classList.remove('visually-hidden');
 
 navMenu.addEventListener('click', function () {
   if (navMain.classList.contains('site-header__nav--closed')) {

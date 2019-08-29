@@ -1,5 +1,6 @@
 .selection fieldset {
   border: none;
+
   @media(max-width: $width-tablet) {
     padding: 0;
   }
@@ -191,7 +192,7 @@
   }
 }
 
-.selection__green-line--shadow {
+.selection__contacts-fieldset--shadow {
   position: relative;
 
   &::before {
@@ -205,6 +206,7 @@
 
     background-color: #64a83b;
     z-index: -1;
+
     @media(max-width: $width-tablet) {
       content: "";
 
@@ -328,14 +330,14 @@
 }
 
 .selection__checkbox:checked+.selection__checkbox-indicator {
-  background-image: url(../img/icon-tick.svg);
+  background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-size: 21px;
   background-position: left 4px top 7px;
 }
 
 .selection__checkbox:disabled+.selection__checkbox-indicator {
-  background-image: url(../img/icon-tick.svg);
+  background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-size: 21px;
   background-position: left 4px top 7px;
@@ -471,7 +473,7 @@
     background-color: #64a83b;
   }
 
-  .selection__green-line--shadow {
+  .selection__contacts-fieldset--shadow {
 
     &::before {
       top: 29px;
@@ -551,7 +553,7 @@
   }
 
   .selection__checkbox:disabled+.selection__checkbox-indicator {
-    background-image: url(../img/icon-tick.svg);
+    background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-size: 22px;
     background-position: left 8px top 11px;
@@ -684,10 +686,6 @@
     margin-bottom: 75px;
   }
 
-  .form__subtitle-extra {
-    // margin-top: 10px;
-  }
-
   .form__fieldset--border {
     border: none;
   }
@@ -739,6 +737,4 @@
     width: 40px;
     height: 40px;
   }
-
-
 }

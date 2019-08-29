@@ -58,7 +58,7 @@
   text-transform: uppercase;
 }
 
-.example__text--small {
+.example__span {
   position: absolute;
   width: 85px;
   left: 17px;
@@ -279,7 +279,7 @@
     line-height: 37px;
   }
 
-  .example__text--small {
+  .example__span {
     padding: 0;
     width: 80%;
     top: 62px;
@@ -426,7 +426,7 @@
     flex-wrap: wrap;
   }
 
-  .example__text--small {
+  .example__span {
     background-color: #f2f2f2;
   }
 
