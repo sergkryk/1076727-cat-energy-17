@@ -141,15 +141,15 @@
   width: 29px;
   height: 29px;
   border-radius: 50%;
-  box-shadow: 0 0 0 1px #cdcdcd;
+  box-shadow: 0 0 0 2px #cdcdcd;
 
   &:hover {
-    box-shadow: 0 0 0 1px #bababa;
+    box-shadow: 0 0 0 2px #bababa;
   }
 }
 
 .selection__radio-button:hover+.selection__radio-indicator {
-  box-shadow: 0 0 0 1px #bababa;
+  box-shadow: 0 0 0 2px #bababa;
 }
 
 
@@ -584,7 +584,7 @@
     padding-right: 890px;
   }
 
-  .selection__data-fieldset {
+  .selection__wrapper--flex {
     display: flex;
   }
 

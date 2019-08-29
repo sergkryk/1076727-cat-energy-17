@@ -51,39 +51,43 @@
       <p class="selection__instruction">заполните анкету и мы подберем программу питания для вашего кота</p>
     </div>
     <form class="selection__form" action="https://echo.htmlacademy.ru" method="get">
-      <fieldset class="selection__data-fieldset selection__wrapper">
-          <ul class="selection__data-list">
-            <li class="selection__data-item">
-              <label class="selection__data-label" for="name">имя:*</label>
-              <input class="selection__name-input" id="name" type="text" placeholder="барсик" required>
-            </li>
-            <li class="selection__data-item">
-              <label class="selection__data-label" for="weight">вес (кг):*</label>
-              <input class="selection__weight-input" id="weight" type="text" placeholder="7" required>
-            </li>
-            <li class="selection__data-item">
-              <label class="selection__data-label" for="age">возраст (лет):</label>
-              <input class="selection__age-input" id="age" type="text" placeholder="7">
-            </li>
-          </ul>
-          <ul class="selection__aim-list">
-            <li class="selection__aim-item">
-              <input class="selection__radio-button" type="radio" name="program-aim" id="fit" value="fit" checked>
-              <span class="selection__radio-indicator"></span>
-              <label class="selection__radio-label" for="fit">похудение</label>
-            </li>
-            <li class="selection__aim-item selection__aim-item--disabled">
-              <input class="selection__radio-button" type="radio" name="program-aim" id="power" value="power" disabled>
-              <span class="selection__radio-indicator"></span>
-              <label class="selection__radio-label" for="power">набор массы</label>
-            </li>
-            <li class="selection__aim-item selection__aim-item--margin-reduced">
-              <input class="selection__radio-button" type="radio" name="program-aim" id="advise" value="advise">
-              <span class="selection__radio-indicator"></span>
-              <label class="selection__radio-label" for="advise">не знаю (нужен ваш совет)</label>
-            </li>
-          </ul>
-      </fieldset>
+      <div class="selection__wrapper selection__wrapper--flex">
+        <fieldset class="selection__data-fieldset">
+            <ul class="selection__data-list">
+              <li class="selection__data-item">
+                <label class="selection__data-label" for="name">имя:*</label>
+                <input class="selection__name-input" id="name" type="text" placeholder="барсик" required>
+              </li>
+              <li class="selection__data-item">
+                <label class="selection__data-label" for="weight">вес (кг):*</label>
+                <input class="selection__weight-input" id="weight" type="text" placeholder="7" required>
+              </li>
+              <li class="selection__data-item">
+                <label class="selection__data-label" for="age">возраст (лет):</label>
+                <input class="selection__age-input" id="age" type="text" placeholder="7">
+              </li>
+            </ul>
+        </fieldset>
+        <fieldset class="selection__aim-fieldset">
+            <ul class="selection__aim-list">
+              <li class="selection__aim-item">
+                <input class="selection__radio-button" type="radio" name="program-aim" id="fit" value="fit" checked>
+                <span class="selection__radio-indicator"></span>
+                <label class="selection__radio-label" for="fit">похудение</label>
+              </li>
+              <li class="selection__aim-item selection__aim-item--disabled">
+                <input class="selection__radio-button" type="radio" name="program-aim" id="power" value="power" disabled>
+                <span class="selection__radio-indicator"></span>
+                <label class="selection__radio-label" for="power">набор массы</label>
+              </li>
+              <li class="selection__aim-item selection__aim-item--margin-reduced">
+                <input class="selection__radio-button" type="radio" name="program-aim" id="advise" value="advise">
+                <span class="selection__radio-indicator"></span>
+                <label class="selection__radio-label" for="advise">не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+        </fieldset>
+      </div>
       <fieldset class="selection__contacts-fieldset selection__green-line--shadow">
         <div class="selection__wrapper">
           <h3 class="selection__contacts-title">Контактные данные (владельца кота)</h3>
@@ -186,8 +190,8 @@
         </li>
       </ul>
       <div class="page-footer__developer-wrapper">
-        <a class="page-footer__link" href="#">HTML Academy</a>
-        <a class="page-footer__developer-logo" href="#">
+        <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="page-footer__developer-logo" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="page-footer__developer-img" width="43" height="42">
             <use xlink:href="#icon-academy"></use>
           </svg>
