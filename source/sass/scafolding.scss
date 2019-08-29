@@ -3,6 +3,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
+  color: $base-black;
 }
 
 img {
@@ -10,29 +11,13 @@ img {
   height: auto;
 }
 
-.container {
-  width: $width-mobile;
-  padding: 0 20px;
-  margin: 0 auto;
+html {
   box-sizing: border-box;
 }
-
-.button--main {
-  display: block;
-  box-sizing: border-box;
-  padding: 16px 27px 16px 25px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.29;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none;
-  background-color: $base-green;
-}
-
-.button--desaturate {
-  background-color: #f2f2f2;
-  color: $base-black;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -51,10 +36,85 @@ img {
   overflow: hidden;
 }
 
+.centerer-mobile {
+  @media(max-width: $width-tablet) {
+    width: $width-mobile;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+
+.centerer-tablet {
+
+  @media(min-width: $width-tablet) {
+    width: $width-tablet;
+    padding: 0 30px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  @media(min-width: $width-desktop) {
+    width: $width-desktop;
+    padding: 0 40px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+
+.button-main {
+  display: block;
+  box-sizing: border-box;
+  padding: 16px 27px 16px 25px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $base-green;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: #8fc46e;
+  background-color: #5eaa2f;
+  }
+}
+
+.button-main--desaturate {
+  background-color: #f2f2f2;
+  color: $base-black;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: #b9b9b9;
+  }
+}
+
+.container {
+  width: $width-mobile;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 @media (min-width: $width-tablet) {
   .container {
     width: $width-tablet;
     padding: 0 30px;
+  }
+
+  .container--form-page {
+    width: $width-tablet;
+    margin: 0 auto;
+    padding: 0 67px 0 72px;
   }
 }
 

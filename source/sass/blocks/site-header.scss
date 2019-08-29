@@ -1,6 +1,5 @@
 .site-header {
   padding-top: 10px;
-  padding-bottom: 10px;
   background-color: white;
 }
 
@@ -11,11 +10,11 @@
   min-height: 41px;
 
   &:hover {
-    opacity: 0.7;
+    opacity: 0.8;
   }
 
   &:active {
-    opacity: 0.4;
+    opacity: 0.6;
   }
 }
 
@@ -88,9 +87,23 @@
   }
 }
 
+@media(max-width: $width-tablet) {
+  .site-header__nav--closed {
+    display: none;
+  }
+
+  .site-header__nav--opened {
+    display: block;
+  }
+
+  .site-header__nav--nojs {
+    display: block;
+  }
+}
+
 @media (min-width: $width-tablet) {
   .site-header {
-    margin-bottom: 48px;
+    margin-bottom: 57px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -108,7 +121,7 @@
 
 @media (min-width: $width-desktop) {
   .site-header {
-    margin-bottom: 58px;
+    margin-bottom: -7px;
     padding-top: 54px;
     background-color: transparent;
   }

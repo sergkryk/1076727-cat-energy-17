@@ -1,9 +1,9 @@
+@import "normalize.scss";
 @import "font.scss";
 @import "variables.scss";
 @import "scafolding.scss";
 @import "mixins.scss";
 @import "blocks/site-header.scss";
-@import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
 @import "blocks/site-promo.scss";
 @import "blocks/program.scss";
@@ -12,3 +12,9 @@
 @import "blocks/social.scss";
 @import "blocks/catalog.scss";
 @import "blocks/product-card.scss";
+@import "blocks/additional-products.scss";
+@import "blocks/contacts.scss";
+@import "blocks/extras-list.scss";
+@import "blocks/example.scss";
+@import "blocks/page-main.scss";
+@import "blocks/selection.scss";

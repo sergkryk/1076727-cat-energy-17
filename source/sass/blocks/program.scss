@@ -3,7 +3,7 @@
 }
 
 .program__card {
-  margin-top: 20px;
+  margin-top: 22px;
   padding: 20px;
   background-color: #f2f2f2;
 }
@@ -11,7 +11,7 @@
 .program__title {
   position: relative;
   margin: 0;
-  padding: 12px 0 29px 72px;
+  padding: 11px 0 29px 72px;
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
@@ -36,7 +36,7 @@
   margin-bottom: 15px;
   padding: 0;
   padding-bottom: 22px;
-  font-family: "Arial", sans-serif;
+  font-family: $arial-font;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -56,15 +56,28 @@
   text-decoration: none;
   text-transform: uppercase;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     content: "";
     position: absolute;
     width: 24px;
     height: 11px;
     background-color: transparent;
-    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     top: 7px;
     right: -35px;
+  }
+}
+
+.program__link:hover {
+
+  &::after {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    width: 32px;
+    right: -59px;
   }
 }
 
@@ -74,7 +87,7 @@
     position: absolute;
     width: 35px;
     height: 49px;
-    background-image: url("../../img/icon-cat-slim.svg");
+    background-image: url("../img/icon-cat-slim.svg");
     background-repeat: no-repeat;
     left: 10px;
     top: 3px;
@@ -88,10 +101,10 @@
     position: absolute;
     width: 67px;
     height: 28px;
-    background-image: url("../../img/icon-cat-pro.svg");
+    background-image: url("../img/icon-cat-pro.svg");
     background-repeat: no-repeat;
     left: -7px;
-    top: 18px;
+    top: 15px;
     z-index: 10;
   }
 }
@@ -103,7 +116,7 @@
 
   .program__card {
     margin: 0 0 31px 0;
-    padding: 75px 0 60px 52px;
+    padding: 75px 0 62px 52px;
   }
 
   .program__title {
@@ -124,7 +137,6 @@
     &::before {
       width: 140px;
       height: 194px;
-      background-image: url("../../img/icon-cat-slim.svg");
       left: 424px;
       top: 5px;
     }
@@ -134,8 +146,6 @@
     &::before {
       width: 268px;
       height: 112px;
-      background-image: url("../../img/icon-cat-pro.svg");
-      background-repeat: no-repeat;
       left: 358px;
       top: 60px;
       z-index: 10;
@@ -144,7 +154,7 @@
 
   .program__description {
     padding: 0 275px 0 0;
-    margin-bottom: 58px;
+    margin-bottom: 56px;
     font-size: 16px;
     line-height: 24px;
     border-bottom: none;
@@ -174,7 +184,7 @@
 
   .program__card {
     padding: 75px 0 62px 10px;
-    width: 560px;
+    width: 570px;
   }
 
   .program__title {
@@ -205,8 +215,8 @@
     &::before {
       width: 134px;
       height: 56px;
-      left: 25px;
-      top: -5px;
+      left: 23px;
+      top: -8px;
       z-index: 10;
     }
   }

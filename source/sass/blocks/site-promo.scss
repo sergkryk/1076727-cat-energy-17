@@ -2,18 +2,19 @@
   padding-top: 17px;
   color: white;
   text-align: center;
-  background-image: url("../../img/index-can-mobile@1x.png"), url("../../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center 165px, top;
+  background-position: center 168px, top;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/index-can-mobile@2x.png"), url("../../img/index-background-mobile@2x.jpg");
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-can-mobile@2x.png"), url("../img/index-background-mobile@2x.jpg");
     background-size: 280px auto, 320px auto;
   }
 }
 
 .site-promo__title {
-  padding: 9px 15px 15px 15px;
+  padding: 11px 15px 15px 15px;
   margin: 0;
   font-size: 36px;
   line-height: 36px;
@@ -30,8 +31,8 @@
 }
 
 .site-promo__link {
-  margin-top: 293px;
-  padding: 11px;
+  margin-top: 291px;
+  padding: 11px 11px 10px;
 }
 
 @media (min-width: $width-tablet) {
@@ -39,18 +40,19 @@
     padding: 0 117px;
     color: #000000;
     text-align: left;
-    background-image: url("../../img/index-can-tablet@1x.jpg");
+    background-image: url("../img/index-can-tablet@1x.jpg");
     background-position: 27px 200px;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/index-can-tablet@2x.jpg");
-      background-size: 709px auto;
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-can-tablet@2x.jpg");
+      background-size: 712px auto;
     }
   }
 
   .site-promo__title {
     padding: 0;
-    margin-bottom: 42px;
+    margin-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -65,7 +67,7 @@
 
   .site-promo__link {
     margin: 0 0 530px 2px;
-    padding: 15px 26px;
+    padding: 16px 26px;
     display: inline-block;
     vertical-align: middle;
     font-size: 20px;
@@ -77,29 +79,29 @@
 @media (min-width: $width-desktop) {
   .site-promo {
     padding: 0 120px;
-    margin-top: -181px;
-    background-image: url("../../img/index-can-desktop@1x.png"), url("../../img/index-background-desktop@1x.jpg");
-    background-position: 490px 142px, 648px top;
+    background-image: url("../img/index-can-desktop@1x.png");
+    background-position: 488px 35px;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/index-can-desktop@2x.png"), url("../../img/index-background-desktop@2x.jpg");
-      background-size: 552px auto, 720px auto;
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-can-desktop@2x.png");
+      background-size: 552px auto;
     }
   }
 
   .site-promo__title {
-    padding-top: 222px;
+    padding-top: 116px;
     padding-right: 630px;
   }
 
   .site-promo__slogan {
-    margin-bottom: 52px;
+    margin-bottom: 53px;
   }
 
   .site-promo__link {
     margin: 0;
     padding: 15px 29px 16px 23px;
-    margin-bottom: 270px;
+    margin-bottom: 268px;
     font-size: 20px;
     line-height: 20px;
   }
