@@ -18,12 +18,13 @@
 }
 
 .catalog__item {
-  margin-bottom: 24px;
+  margin-bottom: 24.5px;
 }
 
 @media (min-width: $width-tablet) {
   .catalog {
     border-top: none;
+    padding-top: 0;
   }
 
   .catalog__item {
@@ -49,7 +50,8 @@
     margin-bottom: 27px;
   }
   .catalog__title {
-    margin-top: 65px;
+    margin-top: 80px;
+    margin-bottom: 165px;
   }
 
   .catalog__item {

@@ -88,11 +88,12 @@
 }
 
 .selection__data-list {
-  padding: 20px 20px 0;
+  margin: 36px 0 0 -3px;
+  padding: 0;
 }
 
 .selection__data-item {
-  margin-bottom: 14px;
+  margin-bottom: 15px;
   display: flex;
   align-items: center;
 }
@@ -104,7 +105,8 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .selection__aim-list {
-  padding: 30px 20px 12px;
+  margin: 31px 0 0 -2px;
+  padding: 0;
 }
 
 .selection__aim-item {
@@ -220,7 +222,7 @@
 }
 
 .selection__contacts-fieldset {
-  margin-top: 13px;
+  margin-top: 41px;
 }
 
 .selection__contacts-title {
@@ -254,12 +256,12 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 .selection__comments-fieldset {
-  margin-top: 15px;
+  margin-top: 17px;
 }
 
 .selection__comments-title {
   width: 162px;
-  margin: 0 0 32px -21px;
+  margin: 0 0 35px -21px;
   padding-left: 20px;
 }
 
@@ -377,7 +379,7 @@
 @media(min-width: $width-tablet) {
 
   .selection input {
-    padding: 10px 20px;
+    padding: 15px 20px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -419,22 +421,32 @@
     line-height: 30px;
   }
 
+  .selection__data-fieldset {
+    margin: 0;
+    padding: 0 0 0 2px;
+  }
+
   .selection__data-list {
     padding: 0;
     margin: 0;
   }
 
   .selection__data-item {
-    margin-bottom: 19px;
+    margin-bottom: 20px;
   }
 
   .selection__weight-input {
     margin-left: 5px;
   }
 
+  .selection__aim-fieldset {
+    margin: 0;
+    padding: 0;
+  }
+
   .selection__aim-list {
-    margin-top: 72px;
-    padding: 24px 35px 15px 29px;
+    margin: 54px 0 0;
+    padding: 25px 29px 15px;
     max-width: 630px;
     border: 1px solid #ededed;
   }
@@ -474,7 +486,7 @@
   }
 
   .selection__contacts-fieldset {
-    margin-top: 47px;
+    margin-top: 66px;
   }
 
   .selection__contacts-title {
@@ -506,7 +518,7 @@
   }
 
   .selection__extras-fieldset {
-    margin-top: 44px;
+    margin-top: 48px;
     margin-bottom: 0;
   }
 
