@@ -623,6 +623,7 @@
   .selection__contacts-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .selection__contacts-item {

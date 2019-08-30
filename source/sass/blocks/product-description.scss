@@ -15,59 +15,99 @@
 
 .product-description__item {
   @include list-reset;
+  position: relative;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
 }
 
-.product-description__logo {
-  margin-right: 20px;
-  min-width: 60px;
-  min-height: 60px;
-  background-color: $base-green;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+.product-description__item--one {
+  &::after {
+    content: "";
 
-.product-description__logo--use {
-  background-image: url("../img/advantage-leaf@1x.png");
+    position: absolute;
+    width: 60px;
+    height: 60px;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/advantage-leaf@2x.png");
-    background-size: 50px auto;
+    background-color: $base-green;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/advantage-leaf@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-leaf@2x.png");
+      background-size: 50px auto;
+    }
+
   }
 }
 
-.product-description__logo--form {
-  background-image: url("../img/advantage-powder@1x.png");
+.product-description__item--two {
+  &::after {
+    content: "";
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/advantage-powder@2x.png");
-    background-size: 50px auto;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+
+    background-color: $base-green;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/advantage-powder@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-powder@2x.png");
+      background-size: 50px auto;
+    }
+
   }
 }
 
-.product-description__logo--how {
-  background-image: url("../img/advantage-dining@1x.png");
+.product-description__item--three {
+  &::after {
+    content: "";
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/advantage-dining@2x.png");
-    background-size: 50px auto;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+
+    background-color: $base-green;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/advantage-dining@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-dining@2x.png");
+      background-size: 50px auto;
+    }
+
   }
 }
 
-.product-description__logo--term {
-  background-image: url("../img/advantage-clock@1x.png");
+.product-description__item--four {
+  &::after {
+    content: "";
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/advantage-clock@2x.png");
-    background-size: 50px auto;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+
+    background-color: $base-green;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/advantage-clock@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-clock@2x.png");
+      background-size: 50px auto;
+    }
+
   }
 }
 
 .product-description__text {
   margin: 0;
-  padding: 0;
+  padding: 6px 0 0 80px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -137,15 +177,18 @@
     }
   }
 
-  .product-description__logo {
-    margin: 0 0 33px 0;
-    min-width: 80px;
-    min-height: 80px;
+  .product-description__item--one,
+  .product-description__item--two,
+  .product-description__item--three,
+  .product-description__item--four {
+    &::after {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   .product-description__text {
-    padding-right: 70px;
-    padding-bottom: 43px;
+    padding: 113px 70px 43px 0;
     font-family: $arial-font;
     font-size: 16px;
     font-weight: 400;
@@ -175,12 +218,8 @@
     margin-right: 0;
   }
 
-  .product-description__logo {
-    margin-bottom: 30px;
-  }
-
   .product-description__text {
-    padding: 0;
+    padding: 110px 0 0;
     font-size: 16px;
     line-height: 24px;
   }

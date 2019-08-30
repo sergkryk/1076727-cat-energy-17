@@ -1,6 +1,7 @@
 .site-promo {
+  margin-top: 13px;
   padding-top: 17px;
-  color: white;
+  color: #ffffff;
   text-align: center;
   background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -37,7 +38,7 @@
 @media (min-width: $width-tablet) {
   .site-promo {
     padding: 0 117px;
-    color: #000000;
+    color: $base-black;
     text-align: left;
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-position: 27px 200px;
@@ -76,6 +77,7 @@
 
 @media (min-width: $width-desktop) {
   .site-promo {
+    margin-top: 0;
     padding: 0 120px;
     background-image: url("../img/index-can-desktop@1x.png");
     background-position: 488px 35px;

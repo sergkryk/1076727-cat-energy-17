@@ -38,7 +38,7 @@ html {
 }
 
 .centerer-mobile {
-  @media (max-width: $width-tablet) {
+  @media (max-width: 767px) {
     width: $width-mobile;
     padding: 0 20px;
     margin: 0 auto;

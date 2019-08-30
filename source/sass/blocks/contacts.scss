@@ -10,7 +10,7 @@
 .contacts__wrapper {
   display: flex;
   padding-top: 28px;
-  padding-bottom: 28px;
+  padding-bottom: 25px;
 }
 
 .contacts__proposal {
@@ -41,15 +41,32 @@
   color: #444444;
 }
 
+.contacts__map-wrapper {
+  width: 100%;
+  min-height: 362px;
+  background-color: #fdf7ef;
+
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+  }
+}
+
 .contacts__iframe-map {
   width: 100%;
   height: 362px;
   border: none;
 }
 
+.contacts__iframe-map--nojs {
+  display: none;
+}
+
 @media (min-width: $width-tablet) {
   .contacts__wrapper {
-    padding: 64px 71px 0 71px;
+    padding: 62px 71px 0 71px;
   }
 
   .contacts__centerer {
@@ -83,8 +100,17 @@
     margin-top: 20px;
   }
 
+  .contacts__map-wrapper {
+    min-height: 396px;
+    background-image: url("../img/bg-map-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+    }
+  }
+
   .contacts__iframe-map {
-    min-height: 397px;
+    min-height: 396px;
   }
 }
 
@@ -116,5 +142,18 @@
     padding: 0;
     padding-left: 47px;
     text-align: left;
+  }
+
+  .contacts__map-wrapper {
+    min-width: 399px;
+    background-image: url("../img/bg-map-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+    }
+  }
+
+  .contacts__iframe-map {
+    min-height: 399px;
   }
 }
