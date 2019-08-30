@@ -209,7 +209,7 @@
   }
 
   .product-card__title {
-    margin: 10px 0 19px;
+    margin: 13px 0 18px;
     padding: 0 18px;
   }
 
@@ -232,6 +232,7 @@
 
   .product-card__title--all {
     padding: 0 40px;
+    margin-bottom: 25px;
 
     &::before {
       top: -81px;
