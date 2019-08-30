@@ -3,6 +3,10 @@
   background-color: white;
 }
 
+.site-header__logo-wrapper {
+  margin-bottom: 10px;
+}
+
 .site-header__logo {
   display: inline-block;
   vertical-align: middle;
@@ -107,6 +111,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .site-header__logo-wrapper {
+    margin-bottom: 0;
   }
 
   .site-header__logo,
