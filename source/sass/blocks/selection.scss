@@ -1,9 +1,6 @@
 .selection fieldset {
   border: none;
-
-  @media (max-width: $width-tablet) {
-    padding: 0;
-  }
+  padding: 0;
 }
 
 .selection ul {
@@ -106,7 +103,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .selection__aim-list {
-  margin: 31px 0 0 -2px;
+  margin: 29px 0 0 -2px;
   padding: 0;
 }
 
@@ -258,7 +255,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 .selection__comments-fieldset {
-  margin-top: 17px;
+  margin-top: 14px;
 }
 
 .selection__comments-title {
@@ -446,8 +443,8 @@
   }
 
   .selection__aim-list {
-    margin: 54px 0 0;
-    padding: 25px 29px 15px;
+    margin: 51px 0 0;
+    padding: 25px 29px 13px;
     max-width: 630px;
     border: 1px solid #ededed;
   }
@@ -474,18 +471,18 @@
 
   .selection__contacts-fieldset--shadow {
     &::before {
-      top: 29px;
+      top: 22px;
     }
   }
 
   .selection__green-line {
     &::before {
-      top: 29px;
+      top: 22px;
     }
   }
 
   .selection__contacts-fieldset {
-    margin-top: 66px;
+    margin-top: 75px;
   }
 
   .selection__contacts-title {
@@ -507,7 +504,7 @@
   }
 
   .selection__comments-fieldset {
-    margin-top: 25px;
+    margin-top: 43px;
   }
 
   .selection__comments-title {
@@ -517,8 +514,8 @@
   }
 
   .selection__extras-fieldset {
-    margin-top: 48px;
-    margin-bottom: 0;
+    margin-top: 66px;
+    margin-bottom: 13px;
   }
 
   .selection__extras-title {
@@ -615,12 +612,12 @@
   }
 
   .selection__contacts-fieldset {
-    margin-top: 62px;
+    margin-top: 68px;
     margin-left: -1px;
   }
 
   .selection__contacts-title {
-    margin: 0 0 40px -40px;
+    margin: 0 0 41px -40px;
   }
 
   .selection__contacts-list {
@@ -633,12 +630,13 @@
   }
 
   .selection__comments-fieldset {
-    margin-top: 28px;
-    margin-left: -2px;
+    margin-top: 47px;
+    margin-left: 0;
   }
 
   .selection__extras-fieldset {
-    margin-top: 49px;
+    margin-top: 68px;
+    margin-bottom: 20px;
     margin-left: 0;
   }
 
@@ -667,70 +665,5 @@
 
   .selection__note {
     margin-top: 24px;
-  }
-}
-
-@media (min-width: $width-tablet) {
-  .form__subtitle {
-    margin: -32px 78px 76px -23px;
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  .form__subtitle-comments {
-    margin-right: 410px;
-    margin-bottom: 75px;
-  }
-
-  .form__fieldset--border {
-    border: none;
-  }
-
-  .form__fieldset--border-green {
-    margin-top: 56px;
-  }
-
-  .form__fieldset--extra {
-    margin-top: 87px;
-  }
-
-  .form__list {
-    margin-bottom: 41px;
-  }
-
-  .form__aim-list {
-    padding: 23px 0 0 27px;
-    border: 1px solid #ededed;
-  }
-
-  .form__item {
-    margin-bottom: 21px;
-  }
-
-  .form__aim-item {
-    margin-bottom: 13px;
-  }
-
-  .form__item--margin-reduced {
-    margin-bottom: 25px;
-  }
-
-  .form__input {
-    padding: 14px 20px 22px;
-  }
-
-  .form__comments-area {
-    padding-left: 17px;
-  }
-
-  .form__input::placeholder {
-    font-size: 20px;
-    line-height: 20px;
-  }
-
-  .form__radio-indicator {
-    margin-right: 19px;
-    width: 40px;
-    height: 40px;
   }
 }
