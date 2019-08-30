@@ -47,7 +47,7 @@
   border: none;
 }
 
-@media(min-width: $width-tablet) {
+@media (min-width: $width-tablet) {
   .contacts__wrapper {
     padding: 64px 71px 0 71px;
   }
@@ -86,10 +86,9 @@
   .contacts__iframe-map {
     min-height: 397px;
   }
-
 }
 
-@media(min-width: $width-desktop) {
+@media (min-width: $width-desktop) {
   .contacts__centerer {
     position: relative;
   }

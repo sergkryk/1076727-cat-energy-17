@@ -5,7 +5,6 @@
 
 .example__title {
   margin: 0;
-  padding: 0;
   padding: 18px 0 9px 0;
   font-family: $base-font;
   font-size: 36px;
@@ -89,7 +88,7 @@
 
   width: 320px;
 
-  @media(min-width: $width-tablet) {
+  @media (min-width: $width-tablet) {
     width: 690px;
   }
 }
@@ -105,7 +104,7 @@
   width: 100%;
   height: 240px;
 
-  @media(min-width: $width-tablet) {
+  @media (min-width: $width-tablet) {
     height: 517px;
   }
 }
@@ -115,8 +114,7 @@
   z-index: 2;
   background-image: url("../img/before-mobile@1x.png");
 
-  @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/before-mobile@2x.png");
   }
 }
@@ -125,8 +123,7 @@
   z-index: 1;
   background-image: url("../img/after-mobile@1x.png");
 
-  @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/after-mobile@2x.png");
   }
 }
@@ -139,8 +136,7 @@
 }
 
 .example__range {
-
-  @media(max-width: $width-tablet) {
+  @media (max-width: $width-tablet) {
     display: none;
   }
 }
@@ -160,7 +156,7 @@
 
   flex-shrink: 0;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -170,7 +166,6 @@
   }
 
   &:hover {
-
     &::after {
       border-bottom: 1px solid $base-black;
     }
@@ -188,13 +183,12 @@
   border-radius: 10px;
   background-color: #ffffff;
 
-  @media(min-width: $width-tablet) {
+  @media (min-width: $width-tablet) {
     display: none;
   }
 }
 
 .example__toggle-bar--before {
-
   &::before {
     content: "";
 
@@ -211,7 +205,6 @@
 }
 
 .example__toggle-bar--after {
-
   &::before {
     content: "";
 
@@ -227,7 +220,7 @@
   }
 }
 
-@media(min-width: $width-tablet) {
+@media (min-width: $width-tablet) {
   .example {
     position: relative;
     margin-top: -3px;
@@ -236,7 +229,6 @@
   }
 
   .example--grey-background {
-
     &::before {
       content: "";
 
@@ -316,8 +308,7 @@
   .example__image--before {
     background-image: url("../img/before-tablet@1x.png"), linear-gradient(to top, #f2f2f2 67.3%, #ffffff 67.3%);
 
-    @media(min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/before-tablet@2x.png"), linear-gradient(to top, #f2f2f2 67.3%, #ffffff 67.3%);
     }
   }
@@ -325,8 +316,7 @@
   .example__image--after {
     background-image: url("../img/after-tablet@1x.png"), linear-gradient(to top, #f2f2f2 67.3%, #ffffff 67.3%);
 
-    @media(min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/after-tablet@2x.png"), linear-gradient(to top, #f2f2f2 67.3%, #ffffff 67.3%);
     }
   }
@@ -347,18 +337,17 @@
       width: 8px;
       height: 8px;
       border-radius: 50%;
-      background: #4CAF50;
+      background: #4caf50;
       border: 12px solid #ffffff;
       cursor: pointer;
       box-shadow: 0 0 1px 1px #cdcdcd;
     }
 
     &::-webkit-slider-thumb {
-      -webkit-appearance: none;
       appearance: none;
       width: 34px;
       height: 34px;
-      background: #4CAF50;
+      background: #4caf50;
       cursor: pointer;
       border-radius: 50%;
       border: 13px solid #ffffff;
@@ -386,8 +375,7 @@
     }
   }
 
-  .example__range:active+.example__toggle-btn {
-
+  .example__range:active + .example__toggle-btn {
     &::after {
       display: none;
     }
@@ -399,7 +387,7 @@
   }
 }
 
-@media(min-width: $width-desktop) {
+@media (min-width: $width-desktop) {
   .example {
     margin-top: -26px;
   }
@@ -459,8 +447,7 @@
   .example__image--before {
     background-image: url("../img/before-desktop@1x.png"), linear-gradient(to top, #f2f2f2 63%, #ffffff 63%);
 
-    @media(min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/before-desktop@2x.png"), linear-gradient(to top, #f2f2f2 63%, #ffffff 63%);
     }
   }
@@ -468,8 +455,7 @@
   .example__image--after {
     background-image: url("../img/after-desktop@1x.png"), linear-gradient(to top, #f2f2f2 63%, #ffffff 63%);
 
-    @media(min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/after-desktop@2x.png"), linear-gradient(to top, #f2f2f2 63%, #ffffff 63%);
     }
   }

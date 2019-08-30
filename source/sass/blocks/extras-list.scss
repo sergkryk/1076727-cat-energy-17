@@ -42,11 +42,11 @@
 }
 
 .extras-list__button {
-    padding: 10px;
+  padding: 10px;
 
-    text-align: center;
-    font-size: 16px;
-    line-height: 20px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 @media (min-width: $width-tablet) {
@@ -96,7 +96,7 @@
   }
 }
 
-@media(min-width: $width-desktop) {
+@media (min-width: $width-desktop) {
   .extras-list {
     max-width: 895px;
   }

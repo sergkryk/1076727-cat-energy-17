@@ -1,10 +1,9 @@
-@media(min-width: $width-desktop) {
+@media (min-width: $width-desktop) {
   .page-main {
     position: relative;
   }
 
   .page-main--green-background {
-
     &::before {
       content: "";
 

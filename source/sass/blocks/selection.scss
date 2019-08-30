@@ -1,7 +1,7 @@
 .selection fieldset {
   border: none;
 
-  @media(max-width: $width-tablet) {
+  @media (max-width: $width-tablet) {
     padding: 0;
   }
 }
@@ -38,11 +38,11 @@
   }
 }
 
-.selection input:focus+.selection__input-icon {
+.selection input:focus + .selection__input-icon {
   fill: #64a83b;
 }
 
-.selection input:invalid+.selection__input-icon {
+.selection input:invalid + .selection__input-icon {
   fill: #ff8282;
 }
 
@@ -151,26 +151,26 @@
   }
 }
 
-.selection__radio-button:hover+.selection__radio-indicator {
+.selection__radio-button:hover + .selection__radio-indicator {
   box-shadow: 0 0 0 2px #bababa;
 }
 
 
-.selection__radio-button:checked+.selection__radio-indicator {
+.selection__radio-button:checked + .selection__radio-indicator {
   width: 29px;
   height: 29px;
   border: 8px solid #ffffff;
   background-color: #64a83b;
 }
 
-.selection__radio-button:disabled+.selection__radio-indicator {
+.selection__radio-button:disabled + .selection__radio-indicator {
   width: 29px;
   height: 29px;
   border: 8px solid #ffffff;
   background-color: #64a83b;
 }
 
-.selection__radio-button:focus+.selection__radio-indicator {
+.selection__radio-button:focus + .selection__radio-indicator {
   outline: 1px dotted #444444;
 }
 
@@ -207,7 +207,7 @@
     background-color: #64a83b;
     z-index: -1;
 
-    @media(max-width: $width-tablet) {
+    @media (max-width: $width-tablet) {
       content: "";
 
       position: absolute;
@@ -325,25 +325,25 @@
   }
 }
 
-.selection__checkbox:hover+.selection__checkbox-indicator {
+.selection__checkbox:hover + .selection__checkbox-indicator {
   border: 1px solid #bababa;
 }
 
-.selection__checkbox:checked+.selection__checkbox-indicator {
+.selection__checkbox:checked + .selection__checkbox-indicator {
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-size: 21px;
   background-position: left 4px top 7px;
 }
 
-.selection__checkbox:disabled+.selection__checkbox-indicator {
+.selection__checkbox:disabled + .selection__checkbox-indicator {
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-size: 21px;
   background-position: left 4px top 7px;
 }
 
-.selection__checkbox:focus+.selection__checkbox-indicator {
+.selection__checkbox:focus + .selection__checkbox-indicator {
   outline: 1px dotted #444444;
 }
 
@@ -378,8 +378,7 @@
 }
 
 
-@media(min-width: $width-tablet) {
-
+@media (min-width: $width-tablet) {
   .selection input {
     padding: 15px 20px;
     font-size: 20px;
@@ -402,7 +401,7 @@
   .selection__wrapper {
     width: 768px;
     margin: 0 auto;
-    padding: 0 65px 0px 70px;
+    padding: 0 65px 0 70px;
   }
 
   .selection h3 {
@@ -459,14 +458,14 @@
     height: 40px;
   }
 
-  .selection__radio-button:checked+.selection__radio-indicator {
+  .selection__radio-button:checked + .selection__radio-indicator {
     width: 40px;
     height: 40px;
     border: 10px solid #ffffff;
     background-color: #64a83b;
   }
 
-  .selection__radio-button:disabled+.selection__radio-indicator {
+  .selection__radio-button:disabled + .selection__radio-indicator {
     width: 40px;
     height: 40px;
     border: 10px solid #ffffff;
@@ -474,14 +473,12 @@
   }
 
   .selection__contacts-fieldset--shadow {
-
     &::before {
       top: 29px;
     }
   }
 
   .selection__green-line {
-
     &::before {
       top: 29px;
     }
@@ -547,12 +544,12 @@
     height: 40px;
   }
 
-  .selection__checkbox:checked+.selection__checkbox-indicator {
+  .selection__checkbox:checked + .selection__checkbox-indicator {
     background-size: 22px;
     background-position: left 8px top 11px;
   }
 
-  .selection__checkbox:disabled+.selection__checkbox-indicator {
+  .selection__checkbox:disabled + .selection__checkbox-indicator {
     background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-size: 22px;
@@ -581,7 +578,7 @@
   }
 }
 
-@media(min-width: $width-desktop) {
+@media (min-width: $width-desktop) {
   .selection__wrapper {
     width: $width-desktop;
     margin: 0 auto;
@@ -589,7 +586,7 @@
   }
 
   .selection__title {
-    margin: 80px 0 0px;
+    margin: 80px 0 0;
     padding: 0;
   }
 
@@ -668,17 +665,12 @@
     margin-right: 82px;
   }
 
-  selection__note {
+  .selection__note {
     margin-top: 24px;
   }
 }
 
-
-
-
-
-@media(min-width: $width-tablet) {
-
+@media (min-width: $width-tablet) {
   .form__subtitle {
     margin: -32px 78px 76px -23px;
     font-size: 36px;
