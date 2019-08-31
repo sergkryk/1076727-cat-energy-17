@@ -80,12 +80,14 @@
     margin-right: 30px;
     padding-bottom: 0;
     border: none;
+    flex-shrink: 0;
   }
 
   .page-footer__developer-wrapper {
     margin-top: -5px;
     padding: 0;
     border: none;
+    flex-shrink: 0;
   }
 
   .page-footer__link {
